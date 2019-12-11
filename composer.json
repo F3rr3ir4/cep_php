@@ -1,0 +1,16 @@
+{
+    "name": "root/cep_php",
+    "description": "busca endereço mediante o cep",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ferreira Leandro",
+            "email": "leandroferreiranetto@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "PHP":">=7.2.0"
+    }
+}
