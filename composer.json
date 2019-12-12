@@ -1,6 +1,6 @@
 {
     "name": "root/cep_php",
-    "description": "busca endereço mediante o cep",
+    "description": "Busca o endereço mediante o cep",
     "type": "library",
     "license": "MIT",
     "authors": [
