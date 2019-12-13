@@ -1,11 +1,16 @@
 <?php
 
-namespace Wead\CepPhp
+namespace Wead\DigitalCep;
 
-class Serach{
-    private $url "https://viacep.com.br/ws/";
+class Search
+{
+    private $url = "https://viacep.com.br/ws/";
 
-    public function getAddFromZipcode(string $ZipCode): array{
-        $ZipCode = preg_replace('//')
+    public function getAddressFromZipcode(string $ZipCode): array{
+        $ZipCode = preg_replace('/[^0-9]/im','', $ZipCode);
+
+        $get = file_get_contents($this->url . $ZipCode . "/json");   
+        
+       return(array) json_decode($get);
     }
 }
